@@ -1,0 +1,1 @@
+# Accelerometers-Samsung-Galaxy
