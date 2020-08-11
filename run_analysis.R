@@ -14,8 +14,8 @@ headers <- read.table("./features.txt")$V2 %>%
     tolower %>% removeSpecialCharacters
 
 ##* Reading Main Data *##
-data <- read.table("./test/X_test.txt", col.names <- headers) %>%
-    rbind(read.table("./train/X_train.txt", col.names <- headers))
+data <- read.table("./test/X_test.txt", col.names = headers) %>%
+    rbind(read.table("./train/X_train.txt", col.names = headers))
     
 ##* Reading and Attaching Subject *##
 data$subject <- read.table("./test/subject_test.txt")$V1 %>% 

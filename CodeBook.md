@@ -2,7 +2,7 @@
 
 ## About the Original Source
 
-The original Data was extracted of [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). According to the athors (Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.), these signals were used to estimate variables of the feature vector for each pattern:  
+The original Data was extracted of [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). According to the athors (Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.), Samsung Galaxy S signals were used to estimate variables of the feature vector for each pattern:  
 
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
@@ -44,7 +44,7 @@ The set of variables that were estimated from these signals are:
  - bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
  - angle(): Angle between to vectors.
 
-This information is avaible on [features_info](https://github.com/CesarBuenoB/Accelerometers-Samsung-Galaxy/blob/master/Raw-Data/features_info.txt)
+This information is avaible at [features_info](https://github.com/CesarBuenoB/Accelerometers-Samsung-Galaxy/blob/master/Raw-Data/features_info.txt)
 
 
 ## The Procedure
@@ -61,7 +61,7 @@ In order to do this, the script has these parts:
 
 ####  Load libraries and Functions
  - Libraries: dplyr, tidyr
- - removeSpecialCharacters: Function that remove "(", ".", "-", ")" from a string
+ - removeSpecialCharacters: Function that remove "(", ")", ".", "-"  from a string
  
 ####  Read and Tidy headers 
  - Reads the headers from [features.txt](https://github.com/CesarBuenoB/Accelerometers-Samsung-Galaxy/blob/master/Raw-Data/features.txt)
@@ -91,7 +91,7 @@ and [Y_test.txt](https://github.com/CesarBuenoB/Accelerometers-Samsung-Galaxy/bl
  - Summarise the data by calculating the means of each variable and plotting by subject and activity
  - Write a table with the information: [tidydata.txt](https://github.com/CesarBuenoB/Accelerometers-Samsung-Galaxy/blob/master/tidydata.txt)
 
-#### The Script is available at [run_analysis.R](https://github.com/jcombari/Peer-graded-Assignment-Getting-and-Cleaning-Data-Course-Project/blob/master/run_analysis.R)
+#### The Script is available at [run_analysis.R](https://github.com/CesarBuenoB/Accelerometers-Samsung-Galaxy/blob/master/run_analysis.R)
 
 
 
