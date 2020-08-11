@@ -1,4 +1,4 @@
-setwd("./Raw-Data")
+setwd("./Raw-Data") # Information about the Procedure at https://github.com/CesarBuenoB/Accelerometers-Samsung-Galaxy/blob/master/CodeBook.md
 ##* Libraries and Functions *##
 library(dplyr)
 library(tidyr)
@@ -13,7 +13,7 @@ removeSpecialCharacters <- function(vector) {
 headers <- read.table("./features.txt")$V2 %>%
     tolower %>% removeSpecialCharacters
 
-##* Reading Main Data and Attaching Subject and Activity *##
+##* Reading Main Data *##
 data <- read.table("./test/X_test.txt", col.names <- headers) %>%
     rbind(read.table("./train/X_train.txt", col.names <- headers))
     
@@ -24,7 +24,6 @@ data$subject <- read.table("./test/subject_test.txt")$V1 %>%
 ##* Reading, Tiding and Attaching Activity *##
 testactivity <- read.table("./test/y_test.txt")$V1
 trainactiviy <- read.table("./train/y_train.txt")$V1
-
 data$activity <- read.table("./activity_labels.txt")$V2 %>%
     tolower %>%
     removeSpecialCharacters %>%

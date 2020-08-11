@@ -3,10 +3,10 @@
 The objective of this project is process data from the ICI archive
 about accelerometers from the Samsung Galaxy S smartphone.
 
-More infromation abouta data:
+More infromation about data:
  - [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
- - [Data Source]("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.")
+ - [Data Source](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.)
  
 ## About the Script
 
@@ -20,3 +20,11 @@ The script does:
  - Labels the data set with descriptive variable names.
 
 The data set output is storage at tidydata.txt file.
+
+There is more information about the Script at the [Code Book](https://github.com/CesarBuenoB/Accelerometers-Samsung-Galaxy/blob/master/CodeBook.md)
+
+
+
+
+
+
